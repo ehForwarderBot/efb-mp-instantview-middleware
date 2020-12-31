@@ -4,7 +4,7 @@
 
 **Middleware ID**: `catbaron.mp_instantview`
 
-The middleware ID was `catbaron.mp_instantview` before version 0.3.0. Please take care of it, especially please remeber to update the configure file of EFB (`$HOME/.ehforwarderbot/profiles/default/config.yaml`).
+The middleware ID was `catbaron.mp_instanceview` before version 0.3.0. Please take care of it, especially please remeber to update the configure file of EFB (`$HOME/.ehforwarderbot/profiles/default/config.yaml`).
 
 **MPInstantViewMiddleware** is a middleware of EFB enable instant view for articles of official accounts.
 
