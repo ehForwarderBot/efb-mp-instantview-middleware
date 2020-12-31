@@ -16,11 +16,11 @@ class MPInstantViewMiddleware(Middleware):
     """
     Middleware - MP InstantView Middleware
     Convert Wechat Official Accounts' url to telegraph to enable
-    instance viewl.
+    instant viewl.
     Author: Catbaron <https://github.com/catbaron0>, 
     """
 
-    middleware_id: str = "catbaron.mp_instanceview"
+    middleware_id: str = "catbaron.mp_instantview"
     middleware_name: str = "MP InstantView Middleware"
     __version__ = version.__version__
     logger: logging.Logger = logging.getLogger(
