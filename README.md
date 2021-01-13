@@ -9,7 +9,7 @@ The middleware ID was `catbaron.mp_instanceview` before version 0.3.0. Please ta
 **MPInstantViewMiddleware** is a middleware of EFB enable instant view for articles of official accounts.
 
 ## How it works
-This middleware generates a telegraph page for links sent by official accounts of wechat, which will enable the instant view. Thus you need a `access_token` (introduced later).
+This middleware generates a telegraph page for links sent by official accounts of wechat, which will enable the instant view. Thus you need an `access_token` (introduced below).
 
 ## Dependense
 * Python >= 3.6
