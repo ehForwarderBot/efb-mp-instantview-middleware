@@ -1,7 +1,5 @@
 import json
 import requests
-# import urllib3
-# import certifi
 from typing import List, Dict
 from bs4 import BeautifulSoup as bs
 from bs4 import Tag, NavigableString
