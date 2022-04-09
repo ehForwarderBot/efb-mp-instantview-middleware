@@ -4,6 +4,17 @@ from typing import List, Dict
 from bs4 import BeautifulSoup as bs
 from bs4 import Tag, NavigableString
 
+def stripKey(dict, key):
+        if type(dict).__name__=="dict":
+                for ownkey in dict.copy():
+                        if ownkey==key:
+                                dict.__delitem__(key)
+                        else:
+                                stripKey(dict[ownkey], key)
+        elif type(dict).__name__=='list':
+                for n in range(len(dict)):
+                        stripKey(dict[n],key)
+
 
 class Telegraph:
     def __init__(self, token, proxy):
@@ -45,6 +56,9 @@ class Telegraph:
                     Optional. List of child nodes for the DOM element.
         '''
         content_str = json.dumps(content)
+        if len(content_str)>65536:
+            stripKey(content[0],'attrs')
+            content_str = json.dumps(content)
         fields = {
             'path': title,
             'return_content': 'true',
