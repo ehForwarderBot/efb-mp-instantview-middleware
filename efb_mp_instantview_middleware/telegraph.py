@@ -17,6 +17,9 @@ class Telegraph:
         self.token = token
         # self.spider = urllib3.PoolManager(cert_reqs="CERT_REQUIRED", ca_certs=certifi.where())
         self.spider = requests.Session()
+        self.spider.headers.update({
+            'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Mobile/15E148 Safari/604.1'
+        })
         proxies = {
             'http': proxy,
             'https': proxy
